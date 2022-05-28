@@ -7,7 +7,13 @@
   <body>
     <button id="myBtn">CLICK ME</button>
     <script>
-      console.log(document.getElementById("myBtn"));
+      var btn = document.getElementById("myBtn");
+      var x = 0;
+      function abc() {
+        x += 1;
+        console.log(`You have Clicked me ${x} times`);
+      }
+      btn.addEventListener("click", abc);
     </script>
   </body>
 </html>
